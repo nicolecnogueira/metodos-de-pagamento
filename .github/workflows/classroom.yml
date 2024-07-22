@@ -21,6 +21,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.CartaoTest.existsCartao
         timeout: 1
+        max-score: 1
     - name: CartaoTest.existsMethodDebitar
       id: cartaotest-existsmethoddebitar
       uses: classroom-resources/autograding-command-grader@v1
@@ -29,6 +30,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.CartaoTest.existsMethodDebitar
         timeout: 1
+        max-score: 1
     - name: CartaoTest.existsMethodEstornar
       id: cartaotest-existsmethodestornar
       uses: classroom-resources/autograding-command-grader@v1
@@ -37,6 +39,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.CartaoTest.existsMethodEstornar
         timeout: 1
+        max-score: 1
     - name: CartaoTest.debitar
       id: cartaotest-debitar
       uses: classroom-resources/autograding-command-grader@v1
@@ -45,6 +48,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.CartaoTest.debitar
         timeout: 1
+        max-score: 1
     - name: CartaoTest.estornar
       id: cartaotest-estornar
       uses: classroom-resources/autograding-command-grader@v1
@@ -53,6 +57,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.CartaoTest.estornar
         timeout: 10
+        max-score: 1
     - name: MetodoPagamentoTest.existsMetodoPagamento
       id: metodopagamentotest-existsmetodopagamento
       uses: classroom-resources/autograding-command-grader@v1
@@ -61,6 +66,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.MetodoPagamentoTest.existsMetodoPagamento
         timeout: 10
+        max-score: 1
     - name: MetodoPagamentoTest.metodoPagamentoIsInterface
       id: metodopagamentotest-metodopagamentoisinterface
       uses: classroom-resources/autograding-command-grader@v1
@@ -69,6 +75,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.MetodoPagamentoTest.metodoPagamentoIsInterface
         timeout: 1
+        max-score: 1
     - name: MetodoPagamentoTest.existsMethodDebitar
       id: metodopagamentotest-existsmethoddebitar
       uses: classroom-resources/autograding-command-grader@v1
@@ -77,6 +84,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.MetodoPagamentoTest.existsMethodDebitar
         timeout: 10
+        max-score: 1
     - name: MetodoPagamentoTest.existsMethodEstornar
       id: metodopagamentotest-existsmethodestornar
       uses: classroom-resources/autograding-command-grader@v1
@@ -85,6 +93,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.MetodoPagamentoTest.existsMethodEstornar
         timeout: 10
+        max-score: 1
     - name: PixTest.debitar
       id: pixtest-debitar
       uses: classroom-resources/autograding-command-grader@v1
@@ -93,6 +102,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.PixTest.debitar
         timeout: 10
+        max-score: 1
     - name: PixTest.estornar
       id: pixtest-estornar
       uses: classroom-resources/autograding-command-grader@v1
@@ -101,6 +111,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.PixTest.estornar
         timeout: 10
+        max-score: 1
     - name: " ProcessadorPagamentosTest.existsProcessadorPagamentos"
       id: processadorpagamentostest-existsprocessadorpagamentos
       uses: classroom-resources/autograding-command-grader@v1
@@ -109,6 +120,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.existsProcessadorPagamentos
         timeout: 10
+        max-score: 1
     - name: ProcessadorPagamentosTest.existsMethodProcessar
       id: processadorpagamentostest-existsmethodprocessar
       uses: classroom-resources/autograding-command-grader@v1
@@ -117,6 +129,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.existsMethodProcessar
         timeout: 1
+        max-score: 1
     - name: ProcessadorPagamentosTest.onlyPix
       id: processadorpagamentostest-onlypix
       uses: classroom-resources/autograding-command-grader@v1
@@ -125,6 +138,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.onlyPix
         timeout: 1
+        max-score: 1
     - name: ProcessadorPagamentosTest.onlyCartao
       id: processadorpagamentostest-onlycartao
       uses: classroom-resources/autograding-command-grader@v1
@@ -133,6 +147,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.onlyCartao
         timeout: 1
+        max-score: 1
     - name: ProcessadorPagamentosTest.pixAndCartao
       id: processadorpagamentostest-pixandcartao
       uses: classroom-resources/autograding-command-grader@v1
@@ -141,6 +156,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.pixAndCartao
         timeout: 10
+        max-score: 1
     - name: ProcessadorPagamentosTest.variosCartoes
       id: processadorpagamentostest-varioscartoes
       uses: classroom-resources/autograding-command-grader@v1
@@ -149,6 +165,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.variosCartoes
         timeout: 1
+        max-score: 1
     - name: ProcessadorPagamentosTest.variosPix
       id: processadorpagamentostest-variospix
       uses: classroom-resources/autograding-command-grader@v1
@@ -157,6 +174,7 @@ jobs:
         setup-command: ''
         command: gradle test --tests br.ufrn.imd.ProcessadorPagamentosTest.variosPix
         timeout: 10
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
